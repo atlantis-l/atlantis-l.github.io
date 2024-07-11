@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "Bundler",
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+  },
+  "include": ["src"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json",
+    },
+  ],
+}

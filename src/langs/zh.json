@@ -1,0 +1,559 @@
+{
+  "Network": {
+    "mainnet": "主网",
+    "stokenet": "测试网"
+  },
+  "Menu": {
+    "StartToUse": {
+      "title": "开始使用"
+    },
+    "TokenTransfer": {
+      "title": "代币转账",
+      "multipleToMultiple": "多转多",
+      "singleToMultiple": "一转多",
+      "multipleToSingle": "多转一"
+    },
+    "Gadgets": {
+      "title": "小工具箱",
+      "HexConvert": "格式转换",
+      "AddressQRCode": "二维码",
+      "NFTIDList": "NFT ID",
+      "DepositRestrict": "存款限制"
+    },
+    "AssetCheck": {
+      "title": "资产查询"
+    },
+    "EntityCheck": {
+      "title": "实体查询"
+    },
+    "HistoryCheck": {
+      "title": "历史查询"
+    },
+    "WalletGenerate": {
+      "title": "账户创建"
+    },
+    "TokenCreate": {
+      "title": "代币创建"
+    },
+    "ManifestExecute": {
+      "title": "清单执行"
+    },
+    "PackageDeploy": {
+      "title": "代码部署"
+    },
+    "XRDFaucet": {
+      "title": "XRD领取"
+    },
+    "LocalSettings": {
+      "title": "本地设置"
+    }
+  },
+  "View": {
+    "StartToUse": {
+      "message": "你好, 世界!"
+    },
+    "TokenTransfer": {
+      "MultipleToMultiple": {
+        "template": {
+          "feePayerModal": {
+            "title": "付费方账户",
+            "addonBefore": "私钥",
+            "placeholder": "根据私钥生成Radix地址"
+          },
+          "confirmTransactionModal": {
+            "title": "交易发送确认",
+            "addonBefore": "文本信息",
+            "placeholder": "链上文本消息(选填)"
+          },
+          "senderModal": {
+            "title": "发送方账户",
+            "addonBefore": "私钥",
+            "placeholder": "根据私钥生成Radix地址"
+          },
+          "selectTokenModal": {
+            "title": "选择代币",
+            "placeholder1": "选择代币",
+            "placeholder2": "选择NFT ID"
+          },
+          "header": {
+            "feePayer": {
+              "addonBefore": "付费方",
+              "feePayerAddress": "费用支付方地址",
+              "placeholder": "交易费用支付账户"
+            },
+            "feeLock": {
+              "addonBefore": "费用锁定",
+              "placeholder": "交易费用",
+              "tooltip": "必须在预估费用的基础上适当增加, 确保交易成功"
+            },
+            "estimateFee": {
+              "button": "预估费用"
+            },
+            "addTransfer": {
+              "button": "添加转账"
+            },
+            "clearAll": {
+              "button": "清空转账"
+            },
+            "feePayerXrdBalance": {
+              "tooltip": "点击刷新余额",
+              "addonBefore": "余额",
+              "placeholder": "付费方的XRD余额"
+            },
+            "sendTransaction": {
+              "button": "发送交易"
+            }
+          },
+          "divider": {
+            "text": "转账列表"
+          },
+          "content": {
+            "sender": {
+              "address": "发送方地址",
+              "addonBefore": "发送方",
+              "placeholder": "发送方账户"
+            },
+            "selectToken": {
+              "tooltip": "选择代币"
+            },
+            "receiver": {
+              "addonBefore": "接收方",
+              "placeholder": "接收方地址"
+            },
+            "deleteBtn": {
+              "tooltip": "删除"
+            }
+          }
+        },
+        "script": {
+          "mounted": {
+            "ftLabel": "同质化代币(FT)",
+            "nftLabel": "非同质化代币(NFT)"
+          },
+          "methods": {
+            "setSender": {
+              "loading": "正在获取代币信息",
+              "success": "代币信息已获取",
+              "error": "代币信息获取失败",
+              "pkError": "私钥格式不匹配"
+            },
+            "setFeePayer": {
+              "pkError": "私钥格式不匹配"
+            },
+            "sendTransaction": {
+              "error": "交易发送失败",
+              "loading": "交易发送中",
+              "warning": "重复发送交易",
+              "success": "交易发送完成"
+            },
+            "previewTransaction": {
+              "loading": "正在进行模拟交易",
+              "error": "模拟交易失败, 打开开发者工具查看详情",
+              "success": "模拟交易成功",
+              "exceed": "超过不同发送方限制数量"
+            },
+            "checkTx": {
+              "loading": "等待交易完成",
+              "success": "交易成功",
+              "error": "交易失败"
+            },
+            "getXrdBalance": {
+              "loading": "正在获取XRD余额",
+              "success": "XRD余额已刷新"
+            },
+            "activateSelectTokenModal": {
+              "unnamedToken": "未命名",
+              "balance": "余额",
+              "amount": "数量",
+              "address": "地址"
+            }
+          }
+        }
+      },
+      "SingleToMultiple": {
+        "template": {
+          "modal": {
+            "transactionProgress": "交易进度"
+          },
+          "header": {
+            "importWallets": {
+              "button": "导入CSV"
+            },
+            "dataNotValid": "信息输入不完整",
+            "simTx": "发送交易时是否进行交易模拟",
+            "template": "导入账户格式",
+            "fieldTemplate": "导入字段格式",
+            "tokenTypeSelect": {
+              "fungibleToken": "发送代币",
+              "nonFungibleToken": "发送NFT"
+            }
+          },
+          "divider": {
+            "text": "转账信息"
+          },
+          "content": {
+            "token": "代币",
+            "amount": "数量",
+            "walletAmount": "账户数量",
+            "tokenAddress": "代币地址",
+            "totalTokenAmount": "代币发送总量",
+            "tokenTip": "只能发送同质化代币(FT)",
+            "amountPlaceholder": "代币数量",
+            "amountTip": "选填(不填则以导入数据为准)",
+            "customTransfer": "自定义NFT ID",
+            "randomTransfer": "随机NFT ID",
+            "tokenBalance": "代币余额"
+          },
+          "optional": "可选项"
+        },
+        "script": {
+          "noPreviewFee": "未预估费用",
+          "enableSimTx": "开启交易模拟",
+          "disableSimTx": "关闭交易模拟"
+        }
+      },
+      "MultipleToSingle": {
+        "template": {
+          "content": {
+            "amountTip": "选填(不填则发送全部)",
+            "receiver": {
+              "addonBefore": "接收方",
+              "placeholder": "接收方账户"
+            }
+          }
+        }
+      }
+    },
+    "HistoryCheck": {
+      "template": {
+        "header": {
+          "input": {
+            "addonBefore": "地址",
+            "placeholder": "输入要查询的地址"
+          },
+          "previous": "上一页",
+          "next": "下一页",
+          "perPage": "条/页"
+        },
+        "divider": {
+          "text": "交易列表"
+        },
+        "modal": {
+          "title": "资产变化",
+          "txFee": "交易费用",
+          "withdraw": "取出",
+          "deposit": "存入",
+          "newEntities": "创建的实体"
+        },
+        "content": {
+          "message": "消息",
+          "affectedEntities": "影响实体"
+        }
+      },
+      "script": {
+        "txListError": "交易列表请求失败",
+        "getTxList": "正在获取交易列表",
+        "gotTxList": "交易列表已获取",
+        "noNext": "到达末页",
+        "noPrevious": "到达首页",
+        "getTxInfo": "正在获取交易信息",
+        "gotTxInfo": "交易信息已获取",
+        "getTxInfoError": "交易信息获取失败",
+        "copied": "已复制"
+      }
+    },
+    "WalletGenerate": {
+      "template": {
+        "create": "创 建",
+        "amount": "已生成的账户数量",
+        "placeholder": "输入账户数量"
+      },
+      "script": {
+        "address": "地址",
+        "fileName": "账户",
+        "error": "输入错误",
+        "privateKey": "私钥"
+      }
+    },
+    "TokenCreate": {
+      "message": "代币创建",
+      "template": {
+        "divider": {
+          "text": "代币供应"
+        },
+        "header": {
+          "tokenTypeSelect": {
+            "fungibleToken": "创建代币",
+            "nonFungibleToken": "创建NFT"
+          },
+          "settingsMode": {
+            "simple": "简易设置",
+            "detailed": "详细设置"
+          }
+        },
+        "content": {
+          "divider": {
+            "metadata": "元数据",
+            "authRoles": "角色授权",
+            "nftFields": "NFT 字段"
+          },
+          "initialSupply": "初始供应量",
+          "initialSupplyPlaceholder": "初始铸造总量",
+          "divisiblePrecision": "可分割精度",
+          "divisiblePrecisionDecimal": "小数位数(0 ~ 18)",
+          "tokenName": "代币名称",
+          "tokenNamePlaceholder": "例: Radix (最多32个字符)",
+          "tokenSymbol": "代币符号",
+          "tokenSymbolPlaceholder": "例: XRD (最多5个字符)",
+          "iconUrl": "图标链接",
+          "iconUrlPlaceholder": "URL链接",
+          "infoUrl": "详情链接",
+          "infoUrlPlaceholder": "URL链接",
+          "tokenTags": "代币标签",
+          "tokenTagsPlaceholder": "以逗号分隔标签",
+          "tokenDescription": "代币描述",
+          "tokenDescriptionPlaceholder": "最多256个字符",
+          "ownerRole": "所有者",
+          "nftFieldsInput": {
+            "placeholder": "以逗号(英文)分隔字段"
+          },
+          "nftList": "NFT 列表",
+          "addNft": "添加"
+        }
+      },
+      "script": {
+        "minter": "铸造",
+        "denyAll": "全部拒绝",
+        "minterUpdater": "更新铸造者",
+        "burner": "燃烧",
+        "burnerUpdater": "更新燃烧者",
+        "freezer": "冻结",
+        "freezerUpdater": "更新冻结者",
+        "recaller": "回收",
+        "recallerUpdater": "更新回收者",
+        "withdrawer": "取款",
+        "withdrawerUpdater": "更新取款者",
+        "depositor": "存款",
+        "depositorUpdater": "更新存款者",
+        "metadataSetter": "元数据设置",
+        "metadataSetterUpdater": "更新元数据设置者",
+        "metadatalocker": "元数据锁定",
+        "metadatalockerUpdater": "更新元数据锁定者",
+        "nftDataSetter": "NFT数据设置",
+        "nftDataSetterUpdater": "更新NFT数据设置者",
+        "string": "字符串"
+      }
+    },
+    "ManifestExecute": {
+      "message": "清单执行",
+      "template": {
+        "divider": {
+          "text": "交易清单"
+        },
+        "content": {
+          "textarea": {
+            "placeholder": "清单内容\n\n将想要更新的字段都替换为${0}\n\n注意: \n1.在进行类似批量转账或者空投的操作时, 存款受限的账户需要通过`存款限制`功能进行标记并手动删除, 以免出现不必要的错误\n\n2.或者使用`try_deposit_or_refund`、`try_deposit_batch_or_refund`来避免交易中断",
+            "fieldName": "字段名称"
+          }
+        },
+        "header": {
+          "importManifest": "导入清单"
+        },
+        "executionTimes": "执行次数"
+      },
+      "script": {
+        "feeLockCode": "CALL_METHOD\n    Address(\"{0}\")\n    \"lock_fee\"\n    Decimal(\"{1}\")\n;",
+        "manifestParsedFailed": "交易清单解析失败",
+        "needImportWalletFile": "需要导入账户文件"
+      }
+    },
+    "PackageDeploy": {
+      "template": {
+        "divider": {
+          "text": "部署文件"
+        },
+        "content": {
+          "uploadWasm": "点击或拖入来上传WASM文件",
+          "uploadRpd": "点击或拖入来上传RPD文件",
+          "deployer": "部署者",
+          "resourceOwner": "拥有以下资源的账户",
+          "nftOwner": "拥有以下NFT的账户",
+          "owner": "谁是所有者?",
+          "canBeChanged": "可更改",
+          "cannotBeChanged": "不可更改"
+        },
+        "header": {
+          "switch": {
+            "text": "是否指定所有权(默认所有权属于部署者)"
+          },
+          "select": {
+            "0": "全部允许",
+            "1": "指定资源",
+            "2": "指定NFT",
+            "3": "无所有者",
+            "tooltip": {
+              "1": "拥有该资源的账户",
+              "2": "拥有该NFT的账户"
+            }
+          },
+          "lock": "锁定(不可更改)"
+        },
+        "modal": {
+          "resourceAddress": "资源地址"
+        }
+      },
+      "script": {
+        "fileError": "文件格式错误"
+      }
+    },
+    "XRDFaucet": {
+      "message": "XRD领取",
+      "template": {
+        "alert": {
+          "message": "收到的XRD为测试网代币, 仅用于测试"
+        },
+        "address": "接收地址",
+        "stokenetAddress": "测试网地址",
+        "requestTimes": "请求次数",
+        "getXRD": "获取XRD",
+        "tooltip": {
+          "requestTimes": "每次请求获取10,000 XRD, 改变请求次数来获取想要的数量"
+        },
+        "xrdBalance": "XRD 余额",
+        "requestCount": "请求计数",
+        "requestXrdAmount": "请求 XRD 数量"
+      },
+      "script": {
+        "loading": "正在获取XRD",
+        "success": "XRD已获取"
+      }
+    },
+    "LocalSettings": {
+      "template": {
+        "gateway": "网关",
+        "button": {
+          "restore": "重 置"
+        },
+        "language": "语言 (Language)",
+        "currentLanguage": "当前语言"
+      }
+    },
+    "AddressQRCode": {
+      "template": {
+        "input": {
+          "addonbefore": "地址",
+          "placeholder": "输入地址"
+        }
+      }
+    },
+    "EntityCheck": {
+      "template": {
+        "divider": {
+          "text": "实体数据"
+        },
+        "check": "查 询"
+      },
+      "script": {
+        "message": {
+          "loading": "正在获取数据",
+          "success": "数据获取完成",
+          "error": "数据获取失败"
+        }
+      }
+    },
+    "HexConvert": {
+      "template": {
+        "input": {
+          "placeholder": "输入地址(Bech32)或十六进制字符串"
+        },
+        "result": {
+          "placeholder": "这里显示转换后的结果"
+        },
+        "tip": "Radix网络中的地址(Bech32)与十六进制格式互转",
+        "errorMainnetAddress": "错误的主网地址",
+        "errorStokenetAddress": "错误的测试网地址",
+        "u8ArrayStr": {
+          "placeholder": "这里显示对应的U8数组"
+        }
+      }
+    },
+    "AssetCheck": {
+      "template": {
+        "fungible": "同质化代币(FT)",
+        "non-fungible": "非同质化代币(NFT)",
+        "search": {
+          "placeholder": "通过地址、符号、名称来搜素"
+        },
+        "symbol": "符号",
+        "name": "名称",
+        "description": "描述",
+        "tags": "标签",
+        "link": "链接",
+        "divisibility": "小数",
+        "total_supply": "供应",
+        "total_minted": "铸造",
+        "total_burned": "燃烧",
+        "vaults": "金库",
+        "Info": "信息",
+        "permission": "权限",
+        "burner": "燃烧",
+        "minter": "铸造",
+        "freezer": "冻结",
+        "recaller": "回收",
+        "depositor": "存款",
+        "withdrawer": "取款",
+        "depositor_updater": "更新存款者",
+        "withdrawer_updater": "更新取款者",
+        "metadata_locker": "锁定元数据",
+        "metadata_setter": "设置元数据",
+        "non_fungible_data_updater": "更新NFT",
+        "AllowAll": "全部允许",
+        "DenyAll": "全部拒绝",
+        "Restricted": "部分允许",
+        "Allow": "允许"
+      },
+      "script": {
+        "loadingNFData": "正在获取NFT数据",
+        "NFDataLoaded": "获取完成",
+        "NFDataloadedError": "获取失败"
+      }
+    }
+  },
+  "current-language-english": "Current Language:「 English 」",
+  "dang-qian-yu-yan-zhong-wen": "当前语言:「 中文 」",
+  "menu-string-array-toreversed-pop-name-string-location-name": "Menu.{0}.{1}",
+  "1-info-resourceaddress-templabel-info-ids-join": "1:{0}:{1}:{2}",
+  "u8-shu-zu": "U8数组",
+  "shi-liu-jin-zhi-zi-fu-chuan": "十六进制字符串",
+  "zhu-wang-di-zhi": "主网地址",
+  "ce-shi-wang-di-zhi": "测试网地址",
+  "mo-ni-qi-di-zhi": "模拟器地址",
+  "ge-shi-cuo-wu": "格式错误",
+  "pu-tong-qing-dan": "普通清单",
+  "ke-geng-xin-nft-id": "可更新NFT ID",
+  "zhao-bu-dao-nftid": "找不到{0}",
+  "xu-yao-zhi-hang-de-nft-id-shu-liang": "需要执行的NFT ID数量",
+  "qing-dan-nei-rong-zai-dan-ci-shi-wu-zhong-de-zhong-fu-ci-shu": "清单内容在单次事务中的重复次数",
+  "mu-qian-zhi-zhi-chi-xiang-tong-zi-yuan-de-xiang-tong-nft-id-ke-zhong-fu-chu-xian": "目前只支持相同资源的相同NFT ID(可重复出现)",
+  "bu-dao-ru-csv-wen-jian-ze-mo-ren-cong-wang-luo-huo-qu-nft-ids": "不导入CSV文件则默认从网络获取NFT ID",
+  "xu-dao-ru-csv-wen-jian": "需导入字段(CSV文件)",
+  "csv-wen-jian-que-shao-zi-duan": "CSV文件缺少字段",
+  "xu-yao-zhi-hang-de-csv-hang-shu": "需要执行的CSV行数",
+  "shu-ru-zhang-hu-huo-zu-jian-di-zhi": "输入账户或组件地址",
+  "shu-ru-zi-yuan-di-zhi": "输入资源地址",
+  "yi-jin-ku-hua-fen-lie": "以金库划分列",
+  "zhuan-huan-wei-quan-ju-id": "转换为全局ID",
+  "huo-qu-nft-id-lie-biao": "获取NFT ID列表",
+  "cuo-wu-de-di-zhi": "错误的地址",
+  "zheng-zai-huo-qu-nft-id-lie-biao": "正在获取NFT ID列表",
+  "dai-bi-yuebu-man-zu-kong-tou-shu-liang-yao-qiu": "代币余额不满足空投数量要求",
+  "cun-kuan-shou-xian-de-zhang-hu-xu-yao-tong-guo-cun-kuan-xian-zhi-gong-neng-jin-hang-biao-ji-bing-shou-dong-shan-chu": "存款受限的账户需要通过`存款限制`功能进行标记并手动删除",
+  "csv-zhong-bao-cun-zhang-hu-di-zhi-de-lie-gai-lie-de-lie-ming-xu-wei-di-zhi": "CSV中保存账户地址的列头须为`地址`",
+  "dian-ji-huo-tuo-ru-lai-shang-chuan-csv-wen-jian": "点击或拖入来上传CSV文件",
+  "dang-qian-wang-luo-wei-zhu-wang-xu-gai-wei-ce-shi-wang": "当前网络为主网, 须改为测试网",
+  "dang-qian-wang-luo-wei-ce-shi-wang-xu-gai-wei-zhu-wang": "当前网络为测试网, 须改为主网",
+  "zheng-zai-jian-cha-zhang-hu-cun-kuan-gui-ze": "正在检查账户存款规则",
+  "jian-cha-wan-cheng": "检查完成",
+  "wang-luo-yi-chang-qing-zhong-xin-jian-cha": "网络异常, 请重新检查",
+  "you-github-pages-ti-gong-zhi-chi": "由「 Github Pages」提供支持"
+}

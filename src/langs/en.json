@@ -1,0 +1,559 @@
+{
+  "Network": {
+    "mainnet": "Mainnet",
+    "stokenet": "Stokenet"
+  },
+  "Menu": {
+    "StartToUse": {
+      "title": "Start To Use"
+    },
+    "TokenTransfer": {
+      "title": "Token Transfer",
+      "multipleToMultiple": "Multiple To Multiple",
+      "singleToMultiple": "Single To Multiple",
+      "multipleToSingle": "Multiple To Single"
+    },
+    "Gadgets": {
+      "title": "Gadgets",
+      "HexConvert": "Hex Convert",
+      "AddressQRCode": "QRCode",
+      "NFTIDList": "NFT ID",
+      "DepositRestrict": "Deposit Restrict"
+    },
+    "AssetCheck": {
+      "title": "Asset Check"
+    },
+    "EntityCheck": {
+      "title": "Entity Check"
+    },
+    "HistoryCheck": {
+      "title": "History Check"
+    },
+    "WalletGenerate": {
+      "title": "Account Generate"
+    },
+    "TokenCreate": {
+      "title": "Token Create"
+    },
+    "ManifestExecute": {
+      "title": "Manifest Execute"
+    },
+    "PackageDeploy": {
+      "title": "Package Deploy"
+    },
+    "XRDFaucet": {
+      "title": "XRD Faucet"
+    },
+    "LocalSettings": {
+      "title": "Local Setting"
+    }
+  },
+  "View": {
+    "StartToUse": {
+      "message": "Hello World!"
+    },
+    "TokenTransfer": {
+      "MultipleToMultiple": {
+        "template": {
+          "feePayerModal": {
+            "title": "Payer Account",
+            "addonBefore": "Private Key",
+            "placeholder": "Use private key to generate Radix address"
+          },
+          "confirmTransactionModal": {
+            "title": "Transaction Send Confirmation",
+            "addonBefore": "Text Message",
+            "placeholder": "On-chain text message (optional)"
+          },
+          "senderModal": {
+            "title": "Sender Account",
+            "addonBefore": "Private Key",
+            "placeholder": "Use private key to generate Radix address"
+          },
+          "selectTokenModal": {
+            "title": "Select Tokens",
+            "placeholder1": "Select Tokens",
+            "placeholder2": "Select NFT IDs"
+          },
+          "header": {
+            "feePayer": {
+              "addonBefore": "Fee Payer",
+              "feePayerAddress": "Fee Payer Address",
+              "placeholder": "Fee Payer Account"
+            },
+            "feeLock": {
+              "addonBefore": "Fee Lock",
+              "placeholder": "Transaction Fee",
+              "tooltip": "Appropriate increases must be made based on the estimated fees to ensure successful transactions"
+            },
+            "estimateFee": {
+              "button": "Estimate Fee"
+            },
+            "addTransfer": {
+              "button": "Add Transfer"
+            },
+            "clearAll": {
+              "button": "Clear Transfer"
+            },
+            "feePayerXrdBalance": {
+              "tooltip": "Click to refresh balance",
+              "addonBefore": "Balance",
+              "placeholder": "Fee Payer Balance"
+            },
+            "sendTransaction": {
+              "button": "Send Transaction"
+            }
+          },
+          "divider": {
+            "text": "Transfer List"
+          },
+          "content": {
+            "sender": {
+              "address": "Sender address",
+              "addonBefore": "Sender",
+              "placeholder": "Sender Account"
+            },
+            "selectToken": {
+              "tooltip": "Select Token"
+            },
+            "receiver": {
+              "addonBefore": "Receiver",
+              "placeholder": "Receiver address"
+            },
+            "deleteBtn": {
+              "tooltip": "Delete"
+            }
+          }
+        },
+        "script": {
+          "mounted": {
+            "ftLabel": "Fungible Token",
+            "nftLabel": "NonFungible Token"
+          },
+          "methods": {
+            "setSender": {
+              "loading": "Token information is being obtained",
+              "success": "Token information has been obtained",
+              "error": "Failed to obtain token information",
+              "pkError": "Private Key format does not match"
+            },
+            "setFeePayer": {
+              "pkError": "Private Key format does not match"
+            },
+            "sendTransaction": {
+              "error": "Transaction sending failed",
+              "loading": "Transaction is being sent",
+              "warning": "Repeat sending transaction",
+              "success": "Transaction sent completed"
+            },
+            "previewTransaction": {
+              "loading": "Simulated transaction in progress",
+              "error": "Simulated transaction failed, open developer tools for details",
+              "success": "Simulated transaction successful",
+              "exceed": "Exceeded the limit number of different senders"
+            },
+            "checkTx": {
+              "loading": "Waiting for transaction to complete",
+              "success": "Transaction successful",
+              "error": "Transaction failed"
+            },
+            "getXrdBalance": {
+              "loading": "XRD balance is being obtained",
+              "success": "XRD balance has been refreshed"
+            },
+            "activateSelectTokenModal": {
+              "unnamedToken": "Unnamed",
+              "balance": "Balance",
+              "amount": "Amount",
+              "address": "Address"
+            }
+          }
+        }
+      },
+      "SingleToMultiple": {
+        "script": {
+          "disableSimTx": "Disable Tx simulation",
+          "enableSimTx": "Enable Tx Simulation",
+          "noPreviewFee": "Unestimated Fee"
+        },
+        "template": {
+          "content": {
+            "amount": "Amount",
+            "amountPlaceholder": "Number of tokens",
+            "amountTip": "Optional (If not filled in, the imported data will prevail)",
+            "token": "Token",
+            "tokenAddress": "Token Address",
+            "tokenTip": "Only fungible tokens can be sent",
+            "totalTokenAmount": "Total amount of tokens sent",
+            "walletAmount": "Number of accounts",
+            "customTransfer": "Custom NFT ID",
+            "randomTransfer": "Random NFT ID",
+            "tokenBalance": "Token Balance"
+          },
+          "divider": {
+            "text": "Transfer Information"
+          },
+          "header": {
+            "dataNotValid": "Incomplete information input",
+            "importWallets": {
+              "button": "Import CSV"
+            },
+            "simTx": "Whether to perform transaction simulation when sending transaction",
+            "template": "Account Template",
+            "fieldTemplate": "Field Template",
+            "tokenTypeSelect": {
+              "fungibleToken": "Fungible",
+              "nonFungibleToken": "NonFungible"
+            }
+          },
+          "modal": {
+            "transactionProgress": "Transaction Progress"
+          },
+          "optional": "optional"
+        }
+      },
+      "MultipleToSingle": {
+        "template": {
+          "content": {
+            "amountTip": "Optional (If left blank, all will be sent)",
+            "receiver": {
+              "addonBefore": "Receiver",
+              "placeholder": "Receiver Account"
+            }
+          }
+        }
+      }
+    },
+    "HistoryCheck": {
+      "template": {
+        "header": {
+          "input": {
+            "addonBefore": "Address",
+            "placeholder": "Enter the address to be checked"
+          },
+          "perPage": "/ Page",
+          "previous": "Previous",
+          "next": "Next"
+        },
+        "divider": {
+          "text": "Transaction List"
+        },
+        "content": {
+          "message": "Message",
+          "affectedEntities": "Affected Entities"
+        },
+        "modal": {
+          "deposit": "Deposit",
+          "title": "Asset Changes",
+          "txFee": "Transaction Fee",
+          "withdraw": "Withdraw",
+          "newEntities": "Created Entities"
+        }
+      },
+      "script": {
+        "noNext": "Reached last page",
+        "noPrevious": "Reached first page",
+        "getTxList": "Getting transaction list",
+        "gotTxList": "Transaction list obtained",
+        "txListError": "Transaction list request failed",
+        "copied": "Copied",
+        "getTxInfo": "Retrieving transaction information",
+        "getTxInfoError": "Failed to obtain transaction information",
+        "gotTxInfo": "Transaction information has been obtained"
+      }
+    },
+    "WalletGenerate": {
+      "script": {
+        "address": "Address",
+        "error": "Input error",
+        "fileName": "Account",
+        "privateKey": "Private Key"
+      },
+      "template": {
+        "amount": "Number of accounts generated",
+        "create": "Generate",
+        "placeholder": "Enter the number of accounts"
+      }
+    },
+    "TokenCreate": {
+      "message": "Token Create",
+      "template": {
+        "header": {
+          "tokenTypeSelect": {
+            "fungibleToken": "Fungible",
+            "nonFungibleToken": "NonFungible"
+          },
+          "settingsMode": {
+            "simple": "Simple Setting",
+            "detailed": "Detailed Setting"
+          }
+        },
+        "content": {
+          "divider": {
+            "metadata": "Metadata",
+            "authRoles": "Roles Auth",
+            "nftFields": "NFT Fields"
+          },
+          "divisiblePrecision": "Divisible Precision",
+          "divisiblePrecisionDecimal": "Decimal places (0 ~ 18)",
+          "iconUrl": "Icon Link",
+          "iconUrlPlaceholder": "URL",
+          "infoUrl": "Info Link",
+          "infoUrlPlaceholder": "URL",
+          "initialSupply": "Initial Supply",
+          "initialSupplyPlaceholder": "Total initial minting amount",
+          "tokenDescription": "Description",
+          "tokenName": "Name",
+          "tokenNamePlaceholder": "E.g. Radix (Max 32 characters)",
+          "tokenSymbol": "Symbol",
+          "tokenSymbolPlaceholder": "E.g. XRD (Max 5 characters)",
+          "tokenTags": "Tags",
+          "tokenTagsPlaceholder": "Separate tags with commas",
+          "tokenDescriptionPlaceholder": "Maximum 256 characters",
+          "ownerRole": "Owner",
+          "nftFieldsInput": {
+            "placeholder": "Separate fields with commas"
+          },
+          "nftList": "NFT List",
+          "addNft": "Add"
+        },
+        "divider": {
+          "text": "Token Supply"
+        }
+      },
+      "script": {
+        "denyAll": "Deny All",
+        "burner": "Burn",
+        "burnerUpdater": "Update Burner",
+        "depositor": "Deposit",
+        "depositorUpdater": "Update Depositor",
+        "freezer": "Freeze",
+        "freezerUpdater": "Update Freezer",
+        "metadataSetter": "Set Metadata",
+        "metadataSetterUpdater": "Update Metadata Setter",
+        "metadatalocker": "Lock Metadata",
+        "metadatalockerUpdater": "Update Metadata Locker",
+        "minter": "Mint",
+        "minterUpdater": "Update Minter",
+        "nftDataSetter": "Set NFT Data",
+        "nftDataSetterUpdater": "Update NFT Data Setter",
+        "recaller": "Recall",
+        "recallerUpdater": "Update Recaller",
+        "withdrawer": "Withdraw",
+        "withdrawerUpdater": "Update Withdrawer",
+        "string": "String"
+      }
+    },
+    "ManifestExecute": {
+      "message": "Manifest Execute",
+      "template": {
+        "divider": {
+          "text": "Transaction Manifest"
+        },
+        "content": {
+          "textarea": {
+            "placeholder": "Manifest Content\n\nReplaces all fields that need to be updated with ${0}\n\nNote:\n1.When performing operations such as bulk transfers or airdrops, accounts with restricted deposits need to be marked via the `Deposit Restrict` feature and manually deleted to avoid unnecessary errors\n\n2.Or use `try_deposit_or_refund`、`try_deposit_batch_or_refund` to avoid transaction interruption",
+            "fieldName": "Field Name"
+          }
+        },
+        "header": {
+          "importManifest": "Import Manifest"
+        },
+        "executionTimes": "Number of executions"
+      },
+      "script": {
+        "feeLockCode": "CALL_METHOD\n    Address(\"{0}\")\n    \"lock_fee\"\n    Decimal(\"{1}\")\n;",
+        "manifestParsedFailed": "Transaction Manifest parsing failed",
+        "needImportWalletFile": "Need to import account file"
+      }
+    },
+    "PackageDeploy": {
+      "template": {
+        "divider": {
+          "text": "Deploy Files"
+        },
+        "content": {
+          "deployer": "Deployer",
+          "uploadRpd": "Click or drag to upload RPD File",
+          "uploadWasm": "Click or drag to upload WASM File",
+          "nftOwner": "Accounts with the following NFT",
+          "resourceOwner": "Accounts with the following resource",
+          "owner": "Who is the owner?",
+          "canBeChanged": "Can be changed",
+          "cannotBeChanged": "Can't be changed"
+        },
+        "header": {
+          "lock": "Lock (Can't be changed)",
+          "select": {
+            "0": "Allow All",
+            "1": "Specify Resource",
+            "2": "Specify NFT",
+            "3": "No Owner",
+            "tooltip": {
+              "1": "The account that owns the resource",
+              "2": "The account that owns the NFT"
+            }
+          },
+          "switch": {
+            "text": "Whether to specify ownership (default ownership belongs to the deployer)"
+          }
+        },
+        "modal": {
+          "resourceAddress": "Resource Address"
+        }
+      },
+      "script": {
+        "fileError": "File format error"
+      }
+    },
+    "XRDFaucet": {
+      "message": "XRD Faucet",
+      "template": {
+        "alert": {
+          "message": "The XRD received is stokenet token, which can only be used for testing"
+        },
+        "address": "Receiving Address",
+        "stokenetAddress": "Stokenet Address",
+        "requestTimes": "Number of requests",
+        "getXRD": "Get XRD",
+        "tooltip": {
+          "requestTimes": "Get 10,000 XRD per request, change the number of requests to get the desired amount"
+        },
+        "xrdBalance": "XRD Balance",
+        "requestCount": "Request Count",
+        "requestXrdAmount": "Required XRD Amount"
+      },
+      "script": {
+        "loading": "Obtaining XRD",
+        "success": "XRD has been obtained"
+      }
+    },
+    "LocalSettings": {
+      "template": {
+        "button": {
+          "restore": "Restore"
+        },
+        "gateway": "Gateway",
+        "language": "Language (语言)",
+        "currentLanguage": "Current Language"
+      }
+    },
+    "AddressQRCode": {
+      "template": {
+        "input": {
+          "addonbefore": "Address",
+          "placeholder": "Enter Address"
+        }
+      }
+    },
+    "EntityCheck": {
+      "template": {
+        "divider": {
+          "text": "Entity Data"
+        },
+        "check": "Check"
+      },
+      "script": {
+        "message": {
+          "loading": "Getting data",
+          "success": "Data acquisition completed",
+          "error": "Data acquisition failed"
+        }
+      }
+    },
+    "HexConvert": {
+      "template": {
+        "input": {
+          "placeholder": "Enter address(Bech32) or hex string"
+        },
+        "result": {
+          "placeholder": "Show converted result here"
+        },
+        "tip": "The address(Bech32) and hexadecimal format in Radix Network converted to each other",
+        "errorMainnetAddress": "Wrong mainnet address",
+        "errorStokenetAddress": "Wrong stokenet address",
+        "u8ArrayStr": {
+          "placeholder": "The corresponding U8 Array is shown here"
+        }
+      }
+    },
+    "AssetCheck": {
+      "template": {
+        "fungible": "Fungible Token",
+        "non-fungible": "NonFungible Token",
+        "search": {
+          "placeholder": "Search by token address、symbol、name"
+        },
+        "symbol": "Symbol",
+        "name": "Name",
+        "description": "Info",
+        "tags": "Tags",
+        "link": "Link",
+        "divisibility": "Decimals",
+        "total_supply": "Supply",
+        "total_minted": "Minted",
+        "total_burned": "Burned",
+        "vaults": "Vaults",
+        "Info": "Infos",
+        "permission": "Permissions",
+        "burner": "Burn",
+        "minter": "Mint",
+        "freezer": "Freeze",
+        "recaller": "Recall",
+        "depositor": "Deposit",
+        "withdrawer": "Withdraw",
+        "depositor_updater": "Update Depositor",
+        "withdrawer_updater": "Update Withdrawer",
+        "metadata_locker": "Lock Metadata",
+        "metadata_setter": "Set Metadata",
+        "non_fungible_data_updater": "Update NFT",
+        "AllowAll": "Allow All",
+        "DenyAll": "Deny All",
+        "Restricted": "Restricted",
+        "Allow": "Allow"
+      },
+      "script": {
+        "loadingNFData": "Obtaining NFT data",
+        "NFDataLoaded": "Obtain completed",
+        "NFDataloadedError": "Failed to obtain"
+      }
+    }
+  },
+  "1-info-resourceaddress-templabel-info-ids-join": "1:{0}:{1}:{2}",
+  "current-language-english": "Current Language:「English」",
+  "dang-qian-yu-yan-zhong-wen": "Current language: \"Chinese\"",
+  "menu-string-array-toreversed-pop-name-string-location-name": "Menu.{0}.{1}",
+  "u8-shu-zu": "U8 Array",
+  "shi-liu-jin-zhi-zi-fu-chuan": "Hex String",
+  "zhu-wang-di-zhi": "Mainnet Address",
+  "ce-shi-wang-di-zhi": "Stokenet Address",
+  "mo-ni-qi-di-zhi": "Simulator Address",
+  "ge-shi-cuo-wu": "Format error",
+  "pu-tong-qing-dan": "Normal Manifest",
+  "ke-geng-xin-nft-id": "Updatable NFT ID",
+  "zhao-bu-dao-nftid": "{0} Not Found",
+  "xu-yao-zhi-hang-de-nft-id-shu-liang": "The number of NFT IDs that need to be executed",
+  "qing-dan-nei-rong-zai-dan-ci-shi-wu-zhong-de-zhong-fu-ci-shu": "The number of times the manifest content is repeated in a single transaction",
+  "mu-qian-zhi-zhi-chi-xiang-tong-zi-yuan-de-xiang-tong-nft-id-ke-zhong-fu-chu-xian": "Currently only the same NFT ID for the same resource is supported (Can appear repeatedly)",
+  "bu-dao-ru-csv-wen-jian-ze-mo-ren-cong-wang-luo-huo-qu-nft-ids": "If don't import the CSV file, the NFT ID will be obtained from the network by default",
+  "xu-dao-ru-csv-wen-jian": "Need to import Fields(CSV File)",
+  "csv-wen-jian-que-shao-zi-duan": "CSV file missing field",
+  "xu-yao-zhi-hang-de-csv-hang-shu": "Number of CSV rows to execute",
+  "shu-ru-zhang-hu-huo-zu-jian-di-zhi": "Enter account or component address",
+  "shu-ru-zi-yuan-di-zhi": "Enter resource address",
+  "yi-jin-ku-hua-fen-lie": "Divide Columns By Vault",
+  "zhuan-huan-wei-quan-ju-id": "Convert To Global ID",
+  "huo-qu-nft-id-lie-biao": "Get NFT ID List",
+  "cuo-wu-de-di-zhi": "Wrong Address",
+  "zheng-zai-huo-qu-nft-id-lie-biao": "Getting NFT ID list",
+  "dai-bi-yuebu-man-zu-kong-tou-shu-liang-yao-qiu": "The token balance does not meet the airdrop quantity requirements",
+  "cun-kuan-shou-xian-de-zhang-hu-xu-yao-tong-guo-cun-kuan-xian-zhi-gong-neng-jin-hang-biao-ji-bing-shou-dong-shan-chu": "Accounts with restricted deposits need to be marked via the `Deposit Restrict` feature and manually deleted",
+  "csv-zhong-bao-cun-zhang-hu-di-zhi-de-lie-gai-lie-de-lie-ming-xu-wei-di-zhi": "The column head to save the account address in CSV must be `Address`",
+  "dian-ji-huo-tuo-ru-lai-shang-chuan-csv-wen-jian": "Click or drag to upload CSV file",
+  "dang-qian-wang-luo-wei-zhu-wang-xu-gai-wei-ce-shi-wang": "The current network is the mainnet and must be changed to stokenet",
+  "dang-qian-wang-luo-wei-ce-shi-wang-xu-gai-wei-zhu-wang": "The current network is stokenet and must be changed to the mainnet",
+  "zheng-zai-jian-cha-zhang-hu-cun-kuan-gui-ze": "Checking account deposit rule",
+  "jian-cha-wan-cheng": "Check completed",
+  "wang-luo-yi-chang-qing-zhong-xin-jian-cha": "Network abnormality, please check again",
+  "you-github-pages-ti-gong-zhi-chi": "Powered by「 Github Pages 」"
+}
