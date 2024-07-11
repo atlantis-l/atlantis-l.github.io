@@ -325,7 +325,9 @@
         style="flex: 1; margin-top: 20px"
         :placeholder="
           $t('View.ManifestExecute.template.content.textarea.placeholder', [
-            `{${$t('View.ManifestExecute.template.content.textarea.fieldName')}}`,
+            `{${$t(
+              'View.ManifestExecute.template.content.textarea.fieldName',
+            )}}`,
           ])
         "
       />
@@ -916,7 +918,9 @@ export default defineComponent({
               if (!this.fieldData[0][this.fieldList[i]]) {
                 message.warn({
                   key,
-                  content: `「 ${this.$t("csv-wen-jian-que-shao-zi-duan")} \`${this.fieldList[i]}\` 」`,
+                  content: `「 ${this.$t("csv-wen-jian-que-shao-zi-duan")} \`${
+                    this.fieldList[i]
+                  }\` 」`,
                 });
                 return;
               }

@@ -391,7 +391,9 @@
                                 style="cursor: default !important"
                                 >{{
                                   $t(
-                                    `View.AssetCheck.template.${permission.split(":")[0]}`,
+                                    `View.AssetCheck.template.${
+                                      permission.split(":")[0]
+                                    }`,
                                   )
                                 }}</a-tag
                               >
@@ -404,7 +406,9 @@
                                 >{{
                                   permission.includes(":")
                                     ? $t(
-                                        `View.AssetCheck.template.${permission.split(":")[1]}`,
+                                        `View.AssetCheck.template.${
+                                          permission.split(":")[1]
+                                        }`,
                                       )
                                     : $t(`View.AssetCheck.template.Allow`)
                                 }}</a-tag
@@ -655,7 +659,9 @@
                                 style="cursor: default !important"
                                 >{{
                                   $t(
-                                    `View.AssetCheck.template.${permission.split(":")[0]}`,
+                                    `View.AssetCheck.template.${
+                                      permission.split(":")[0]
+                                    }`,
                                   )
                                 }}</a-tag
                               >
@@ -668,7 +674,9 @@
                                 >{{
                                   permission.includes(":")
                                     ? $t(
-                                        `View.AssetCheck.template.${permission.split(":")[1]}`,
+                                        `View.AssetCheck.template.${
+                                          permission.split(":")[1]
+                                        }`,
                                       )
                                     : $t(`View.AssetCheck.template.Allow`)
                                 }}</a-tag
@@ -930,7 +938,9 @@
                                 style="cursor: default !important"
                                 >{{
                                   $t(
-                                    `View.AssetCheck.template.${permission.split(":")[0]}`,
+                                    `View.AssetCheck.template.${
+                                      permission.split(":")[0]
+                                    }`,
                                   )
                                 }}</a-tag
                               >
@@ -943,7 +953,9 @@
                                 >{{
                                   permission.includes(":")
                                     ? $t(
-                                        `View.AssetCheck.template.${permission.split(":")[1]}`,
+                                        `View.AssetCheck.template.${
+                                          permission.split(":")[1]
+                                        }`,
                                       )
                                     : $t(`View.AssetCheck.template.Allow`)
                                 }}</a-tag
@@ -1199,7 +1211,9 @@
                                 style="cursor: default !important"
                                 >{{
                                   $t(
-                                    `View.AssetCheck.template.${permission.split(":")[0]}`,
+                                    `View.AssetCheck.template.${
+                                      permission.split(":")[0]
+                                    }`,
                                   )
                                 }}</a-tag
                               >
@@ -1212,7 +1226,9 @@
                                 >{{
                                   permission.includes(":")
                                     ? $t(
-                                        `View.AssetCheck.template.${permission.split(":")[1]}`,
+                                        `View.AssetCheck.template.${
+                                          permission.split(":")[1]
+                                        }`,
                                       )
                                     : $t(`View.AssetCheck.template.Allow`)
                                 }}</a-tag
@@ -1884,7 +1900,9 @@ export default defineComponent({
         })
         .catch((e) => {
           message.error({
-            content: `「 ${this.$t("View.AssetCheck.script.NFDataloadedError")} 」`,
+            content: `「 ${this.$t(
+              "View.AssetCheck.script.NFDataloadedError",
+            )} 」`,
             key,
           });
 

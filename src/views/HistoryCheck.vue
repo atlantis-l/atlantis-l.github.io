@@ -31,7 +31,7 @@
       <a-textarea
         autoSize
         readonly
-        style="max-height: 500px; overflow: scroll"
+        id="manifest-area"
         :value="manifest"
       ></a-textarea>
     </a-modal>

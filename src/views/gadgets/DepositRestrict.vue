@@ -102,7 +102,9 @@ export default defineComponent({
       if (address.startsWith("account_tdx_2") && this.store.networkId !== 2) {
         message.warn({
           key: "net",
-          content: `「 ${this.$t("dang-qian-wang-luo-wei-zhu-wang-xu-gai-wei-ce-shi-wang")} 」`,
+          content: `「 ${this.$t(
+            "dang-qian-wang-luo-wei-zhu-wang-xu-gai-wei-ce-shi-wang",
+          )} 」`,
         });
 
         return false;
@@ -112,7 +114,9 @@ export default defineComponent({
       ) {
         message.warn({
           key: "net",
-          content: `「 ${this.$t("dang-qian-wang-luo-wei-ce-shi-wang-xu-gai-wei-zhu-wang")} 」`,
+          content: `「 ${this.$t(
+            "dang-qian-wang-luo-wei-ce-shi-wang-xu-gai-wei-zhu-wang",
+          )} 」`,
         });
 
         return false;
@@ -127,7 +131,9 @@ export default defineComponent({
       message.loading({
         key,
         duration: 0,
-        content: `「 ${this.$t("zheng-zai-jian-cha-zhang-hu-cun-kuan-gui-ze")} 」`,
+        content: `「 ${this.$t(
+          "zheng-zai-jian-cha-zhang-hu-cun-kuan-gui-ze",
+        )} 」`,
       });
 
       const MAX_ADDRESS_PER_CHECK = 20;
@@ -177,7 +183,9 @@ export default defineComponent({
 
             message.error({
               key,
-              content: `「 ${this.$t("wang-luo-yi-chang-qing-zhong-xin-jian-cha")} 」`,
+              content: `「 ${this.$t(
+                "wang-luo-yi-chang-qing-zhong-xin-jian-cha",
+              )} 」`,
             });
           });
 

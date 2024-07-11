@@ -1066,7 +1066,9 @@ export default defineComponent({
                 `View.TokenTransfer.MultipleToMultiple.script.methods.activateSelectTokenModal.address`,
               )}: ${info.resourceAddress} 」`;
 
-              const value = `0:${info.resourceAddress}:${tempLabel ? tempLabel : ""}:${info.amount}`;
+              const value = `0:${info.resourceAddress}:${
+                tempLabel ? tempLabel : ""
+              }:${info.amount}`;
 
               this.tokenOptions[0].options.push({
                 name,
@@ -1100,7 +1102,9 @@ export default defineComponent({
                 `View.TokenTransfer.MultipleToMultiple.script.methods.activateSelectTokenModal.address`,
               )}: ${info.resourceAddress} 」`;
 
-              const value = `1:${info.resourceAddress}:${tempLabel ? tempLabel : ""}:${info.ids?.join(",")}`;
+              const value = `1:${info.resourceAddress}:${
+                tempLabel ? tempLabel : ""
+              }:${info.ids?.join(",")}`;
 
               this.tokenOptions[1].options.push({
                 name,

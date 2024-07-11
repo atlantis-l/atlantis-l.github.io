@@ -493,7 +493,9 @@ export default defineComponent({
       if (v) {
         message.warn({
           key: "isExceed",
-          content: `「 ${this.$t("dai-bi-yuebu-man-zu-kong-tou-shu-liang-yao-qiu")} 」`,
+          content: `「 ${this.$t(
+            "dai-bi-yuebu-man-zu-kong-tou-shu-liang-yao-qiu",
+          )} 」`,
         });
       }
     },
@@ -777,7 +779,9 @@ export default defineComponent({
       if (this.isExceed) {
         message.warn({
           key: "isExceed",
-          content: `「 ${this.$t("dai-bi-yuebu-man-zu-kong-tou-shu-liang-yao-qiu")} 」`,
+          content: `「 ${this.$t(
+            "dai-bi-yuebu-man-zu-kong-tou-shu-liang-yao-qiu",
+          )} 」`,
         });
         return;
       }

@@ -82,7 +82,7 @@
               text-align: center;
               font-size: 13px;
             "
-            href="https://github.com/atlantis-l/Radix-Web-Tool"
+            href="https://github.com/atlantis-l/atlantis-l.github.io"
             target="_blank"
           >
             {{ $t("you-github-pages-ti-gong-zhi-chi") }}
