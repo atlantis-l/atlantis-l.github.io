@@ -86,6 +86,48 @@
         />
       </h3>
     </article>
+
+    <div style="flex: 1" />
+
+    <a-alert :message="$t('mian-ze-sheng-ming')" type="warning">
+      <template #description>
+        <ul>
+          <li>
+            {{
+              $t(
+                "ben-gong-ju-bu-bao-cun-ren-he-si-yue-yong-hu-xu-zi-hang-bao-guan",
+              )
+            }}
+          </li>
+          <li>
+            {{
+              $t(
+                "ben-gong-ju-she-ji-zhi-jie-cao-zuo-si-yue-xu-que-bao-cao-zuo-huan-jing-an-quan-hou-fang-ke-cao-zuo",
+              )
+            }}
+          </li>
+          <li>
+            {{
+              $t(
+                "ben-gong-ju-jin-wei-xue-xi-jiao-liu-shi-yong-yi-qie-hou-guo-xu-you-shi-yong-zhe-zi-hang-cheng-dan-gong-ju-zuo-zhe-bu-cheng-dan-ren-he-ze-ren",
+              )
+            }}
+          </li>
+          <li>
+            {{
+              $t(
+                "ben-gong-ju-you-dai-ma-cang-ku-zi-dong-sheng-cheng-yu-bu-shu-dai-ma-tou-ming-ke-yan-zheng",
+              )
+            }}
+            <a
+              href="https://github.com/atlantis-l/atlantis-l.github.io"
+              target="_blank"
+              >{{ $t("dian-ji-cha-kan") }}</a
+            >
+          </li>
+        </ul>
+      </template>
+    </a-alert>
   </a-layout>
 </template>
 

@@ -58,6 +58,7 @@ export default defineStore("store", {
       if (cookies.get("language")) {
         this.language = cookies.get("language");
       } else {
+        this.language = navigator.language.includes("zh") ? "zh" : "en";
         cookies.set("language", this.language);
       }
 
@@ -88,7 +89,7 @@ export default defineStore("store", {
       if (cookies.get("selectedKeys")) {
         this.selectedKeys = cookies.get("selectedKeys");
       } else {
-        cookies.set("selectedKeys", this.selectedKeys);
+        cookies.set("selectedKeys", this.selectedKeys, "1h");
       }
 
       if (cookies.get("menuFoldState")) {

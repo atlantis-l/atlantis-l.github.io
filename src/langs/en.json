@@ -555,5 +555,11 @@
   "zheng-zai-jian-cha-zhang-hu-cun-kuan-gui-ze": "Checking account deposit rule",
   "jian-cha-wan-cheng": "Check completed",
   "wang-luo-yi-chang-qing-zhong-xin-jian-cha": "Network abnormality, please check again",
-  "you-github-pages-ti-gong-zhi-chi": "Powered by「 Github Pages 」"
+  "you-github-pages-ti-gong-zhi-chi": "Powered by「 Github Pages 」",
+  "mian-ze-sheng-ming": "Disclaimer",
+  "ben-gong-ju-bu-bao-cun-ren-he-si-yue-yong-hu-xu-zi-hang-bao-guan": "This tool does not store any private keys, users need to keep their own",
+  "ben-gong-ju-she-ji-zhi-jie-cao-zuo-si-yue-xu-que-bao-cao-zuo-huan-jing-an-quan-hou-fang-ke-cao-zuo": "This tool involves direct operation of private keys, ensure that the operation environment is secure before performing operation",
+  "ben-gong-ju-jin-wei-xue-xi-jiao-liu-shi-yong-yi-qie-hou-guo-xu-you-shi-yong-zhe-zi-hang-cheng-dan-gong-ju-zuo-zhe-bu-cheng-dan-ren-he-ze-ren": "This tool is only used for learning and communication, all consequences should be borne by the user, the author of the tool does not assume any responsibility",
+  "ben-gong-ju-you-dai-ma-cang-ku-zi-dong-sheng-cheng-yu-bu-shu-dai-ma-tou-ming-ke-yan-zheng": "This tool is automatically generated and deployed by the code repo, the code is transparent and verifiable,",
+  "dian-ji-cha-kan": "click to view"
 }

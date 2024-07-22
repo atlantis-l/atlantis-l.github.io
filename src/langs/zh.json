@@ -555,5 +555,11 @@
   "zheng-zai-jian-cha-zhang-hu-cun-kuan-gui-ze": "正在检查账户存款规则",
   "jian-cha-wan-cheng": "检查完成",
   "wang-luo-yi-chang-qing-zhong-xin-jian-cha": "网络异常, 请重新检查",
-  "you-github-pages-ti-gong-zhi-chi": "由「 Github Pages」提供支持"
+  "you-github-pages-ti-gong-zhi-chi": "由「 Github Pages」提供支持",
+  "mian-ze-sheng-ming": "免责声明",
+  "ben-gong-ju-bu-bao-cun-ren-he-si-yue-yong-hu-xu-zi-hang-bao-guan": "本工具不保存任何私钥, 用户需自行保管",
+  "ben-gong-ju-she-ji-zhi-jie-cao-zuo-si-yue-xu-que-bao-cao-zuo-huan-jing-an-quan-hou-fang-ke-cao-zuo": "本工具涉及直接操作私钥, 需确保操作环境安全后方可操作",
+  "ben-gong-ju-jin-wei-xue-xi-jiao-liu-shi-yong-yi-qie-hou-guo-xu-you-shi-yong-zhe-zi-hang-cheng-dan-gong-ju-zuo-zhe-bu-cheng-dan-ren-he-ze-ren": "本工具仅为学习交流使用, 一切后果需由使用者自行承担, 工具作者不承担任何责任",
+  "ben-gong-ju-you-dai-ma-cang-ku-zi-dong-sheng-cheng-yu-bu-shu-dai-ma-tou-ming-ke-yan-zheng": "本工具由代码仓库自动生成与部署, 代码透明可验证,",
+  "dian-ji-cha-kan": "点击查看"
 }

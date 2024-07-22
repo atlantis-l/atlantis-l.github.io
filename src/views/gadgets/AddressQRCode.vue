@@ -36,7 +36,7 @@ export default defineComponent({
     },
   },
   mounted() {
-    const REPO_URL = "https://github.com/atlantis-l/Radix-Desktop-Tool";
+    const REPO_URL = "https://github.com/atlantis-l/atlantis-l.github.io";
 
     this.drawCanvas(REPO_URL);
   },
